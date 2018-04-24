@@ -31,3 +31,8 @@ We encourage you to make good use of data visualisation packages such as [react-
 These are fairly customisable and save you from re-inventing the wheel when it comes to creating charts.
 
 Some of the data sets from the APIs above come with coordinates (lat, lon) so it would be cool to use them to visualise your data on a map. The [Google maps API](https://developers.google.com/maps/) would be a good place to start.
+
+Don't feel confined to these suggestions. If you come accross something else you'd like to try feel free =]
+
+Note:
+If you cd into the root directory of this repo you can run `create-react-app .` to place your new project in here.
