@@ -30,7 +30,7 @@ Once you have chosen your API you should spend a little time planning.
 We encourage you to make good use of data visualisation packages such as [react-chartjs-2](https://github.com/jerairrest/react-chartjs-2) or [react-google-charts](https://www.npmjs.com/package/react-google-charts)
 These are fairly customisable and save you from re-inventing the wheel when it comes to creating charts.
 
-Some of the data sets from the APIs above come with coordinates (lat, lon) so it would be cool to use them to visualise your data on a map. The [Google maps API](https://developers.google.com/maps/) would be a good place to start.
+Some of the data sets from the APIs above come with coordinates (lat, lon) so it would be cool to use them to visualise your data on a map. [React-Leaflet](https://react-leaflet.js.org/) would be a good place to start.
 
 Don't feel confined to these suggestions. If you come accross something else you'd like to try feel free =]
 
