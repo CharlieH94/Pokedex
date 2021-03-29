@@ -1,8 +1,8 @@
-## REACTOGRAPHY
+# REACTOGRAPHY
 
 Today's sprint leaves a lot of room for you to be creative.
 
-#### THE TASK
+## THE TASK
 
 We'll be looking at using data from a third party API. Your task is to create a React-based interface to present this data in an interactive and engaging way. What you display and how you display it is entirely up to you, but your app must allow users to interact with your data visualisation in some way.
 
@@ -10,7 +10,7 @@ For example if you were displaying a heatmap for earthquake data, the user might
 
 The first step is to decide on which API you will use for this project. We recommend using one from the following list as they are fairly easy to get started with. Stray at your own risk!
 
-#### CHOOSE YOUR API
+## CHOOSE YOUR API
 
 Pick one of the following APIs as your main source of data:
 
@@ -31,7 +31,7 @@ Once you have chosen your API you should spend a little time planning.
 - [] Design your state so you keep it to a minimum. Don't repeat yourself!
 - [] Ensure state is high enough it can be shared by necessary components, but as low as possible to avoid passing it unnecessarily.
 
-#### Visualisation
+## Visualisation
 
 We encourage you to make good use of data visualisation packages such as [react-chartjs-2](https://github.com/jerairrest/react-chartjs-2) or [react-google-charts](https://www.npmjs.com/package/react-google-charts)
 These are fairly customisable and save you from re-inventing the wheel when it comes to creating charts.
