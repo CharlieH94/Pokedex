@@ -12,7 +12,7 @@ The first step is to decide on which API you will use for this project. We recom
 
 ## CHOOSE YOUR API
 
-Pick one of the following APIs as your main source of data:
+You will need a public API as your main source of data. There are a lot out there so we have created a short list of suitable options:
 
 - [UK Police Data](https://data.police.uk/docs/) - Policing & crime data in the UK
 - [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/fdsnws/event/1/) - Earthquakes and stuff
@@ -21,6 +21,12 @@ Pick one of the following APIs as your main source of data:
 - [TicketMaster](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/) - Events
 - [Google books](https://developers.google.com/books/docs/overview) - Information on Books
 - [NASA](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh) - Meteorite landings
+
+If none of these spark our interest then there is a more comprehensive list in this [repo](https://github.com/public-apis/public-apis)
+
+_nb_ Some of these api's require authentication. Make sure you use one that does not to keep your application simple enough for this sprint.
+
+If you come across something else you'd like to try feel free =]
 
 Once you have chosen your API you should spend a little time planning.
 
@@ -33,18 +39,18 @@ Once you have chosen your API you should spend a little time planning.
 
 ## Visualisation
 
-We encourage you to make good use of data visualisation packages such as [react-chartjs-2](https://github.com/jerairrest/react-chartjs-2) or [react-google-charts](https://www.npmjs.com/package/react-google-charts)
-These are fairly customisable and save you from re-inventing the wheel when it comes to creating charts.
+We encourage you to make good use of data visualisation packages such as
 
-Some of the data sets from the APIs above come with coordinates (lat, lon) so it would be cool to use them to visualise your data on a map. [Pigeon Maps](https://pigeon-maps.js.org/) is a lightweight and straightforward library for rendering react maps.
+- [react-chartjs-2](https://github.com/jerairrest/react-chartjs-2) They have some lovely [demos](https://reactchartjs.github.io/react-chartjs-2/#/) with links to examples.
+- [react-google-charts](https://www.npmjs.com/package/react-google-charts) A wider range with more options for charts.
+
+These are both fairly customisable and save you from re-inventing the wheel when it comes to creating charts.
+
+Some of the data sets from the APIs above come with coordinates (lat, lon) so it would be cool to use them to visualise your data on a map. A nice free option for rendering maps in React is [React leaflet](https://react-leaflet.js.org/).
+
+It comes with an excellent [getting started guide](https://react-leaflet.js.org/docs/start-installation) to get you up and running.
 
 Don't feel confined to these suggestions. There are several other public api's / visulisation libraries out there for you to use. Spend a bit of time planning your app and researching what information is available in your api's.
-
-A nice list of api's can be found in this [repo](https://github.com/public-apis/public-apis)
-
-_nb_ Some of these api's require authentication. Make sure you use one that does not to keep your application simple enough for this sprint.
-
-If you come accross something else you'd like to try feel free =]
 
 Note:
 If you cd into the root directory of this repo you can run `create-react-app .` to place your new project in here.
