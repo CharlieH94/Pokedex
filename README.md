@@ -19,6 +19,8 @@ to place your new project in here.
 
 The first step is to decide on which API you will use for this project. We have provided a shortlist of api's that you might find useful but you are not limited to these.
 
+- [Marvel Comics](https://developer.marvel.com/) - An official database for all things superhero
+- [The Cat API](https://thecatapi.com/) - Cats as a service
 - [UK Police Data](https://data.police.uk/docs/) - Policing & crime data in the UK
 - [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/fdsnws/event/1/) - Earthquakes and stuff
 - [BikeWise](https://www.bikewise.org/documentation/api_v2) - Bike crashes, hazards and thefts
@@ -55,7 +57,7 @@ In order to build more complicated UI's we can take advantage of pre-built 3rd p
 - [react-google-charts](https://www.npmjs.com/package/react-google-charts) A more complex chart library with a wider range of options.
 - [React leaflet](https://react-leaflet.js.org/) A free library for rendering leaflet maps in React. It comes with an excellent [getting started guide](https://react-leaflet.js.org/docs/start-installation) to get you up and running.
 - [React Bootstrap](https://react-bootstrap.github.io/) React components based on the popular Bootstrap CSS framework.
-- [Material UI](https://material-ui.com/) React components using Google's Material design.
+- [Material UI](https://material-ui.com/) React components that use Google's Material design.
 
 
 Don't feel confined to these suggestions. There are several other public api's / visulisation libraries out there for you to use. Spend a bit of time planning your app and researching what information is available in your api's.
