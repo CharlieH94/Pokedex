@@ -1,18 +1,23 @@
-# REACTOGRAPHY
+# React Data Fetching
 
-Today's sprint leaves a lot of room for you to be creative.
-
-## THE TASK
-
-We'll be looking at using data from a third party API. Your task is to create a React-based interface to present this data in an interactive and engaging way. What you display and how you display it is entirely up to you, but your app must allow users to interact with your data visualisation in some way.
+In this sprint you'll be using data from a third party API. Your task is to create a React-based interface to present this data in an interactive and engaging way. What you display and how you display it is entirely up to you, but your app must allow users to interact with your data visualisation in some way.
 
 For example if you were displaying a heatmap for earthquake data, the user might choose to show only data for a certain location, and then they may choose to show only events between January and May 2018. The interface would alter the data visualisation to match what the user had chosen.
 
-The first step is to decide on which API you will use for this project. We recommend using one from the following list as they are fairly easy to get started with. Stray at your own risk!
 
-## CHOOSE YOUR API
+Note:
+If you cd into the root directory of this repo you can run 
 
-You will need a public API as your main source of data. There are a lot out there so we have created a short list of suitable options:
+```bash
+create-react-app .
+```
+
+to place your new project in here.
+
+
+## Choose your API
+
+The first step is to decide on which API you will use for this project. We have provided a shortlist of api's that you might find useful but you are not limited to these.
 
 - [UK Police Data](https://data.police.uk/docs/) - Policing & crime data in the UK
 - [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/fdsnws/event/1/) - Earthquakes and stuff
@@ -22,35 +27,36 @@ You will need a public API as your main source of data. There are a lot out ther
 - [Google books](https://developers.google.com/books/docs/overview) - Information on Books
 - [NASA](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh) - Meteorite landings
 
-If none of these spark our interest then there is a more comprehensive list in this [repo](https://github.com/public-apis/public-apis)
+If none of these spark your interest then there is a more comprehensive list in this [repo](https://github.com/public-apis/public-apis)
 
-_nb_ Some of these api's require authentication. Make sure you use one that does not to keep your application simple enough for this sprint.
+_nb_ Some of these api's require authentication. Make sure you use one that is publicly available to keep your application simple enough for this sprint.
 
-If you come across something else you'd like to try feel free =]
+Feel free to do your own research and if you come across something else you'd like to try feel free =]
 
 Once you have chosen your API you should spend a little time planning.
 
 - [ ] Draw out your interface
 - [ ] Choose which pieces of the interface can be separated into components
 - [ ] Draw out the tree structure for your components
-- [ ] Decide which pieces of state each component will need and get a rough idea of where this state will sit on your tree
 - [ ] Design your state so you keep it to a minimum. Don't repeat yourself!
+- [ ] Decide which pieces of state each component will need and get a rough idea of where this state will sit on your tree
 - [ ] Ensure state is high enough it can be shared by necessary components, but as low as possible to avoid passing it unnecessarily.
 
-## Visualisation
 
-We encourage you to make good use of data visualisation packages such as
+## Visualise the data
 
-- [react-chartjs-2](https://github.com/jerairrest/react-chartjs-2) They have some lovely [demos](https://reactchartjs.github.io/react-chartjs-2/#/) with links to examples.
-- [react-google-charts](https://www.npmjs.com/package/react-google-charts) A wider range with more options for charts.
+How you display your data is up to you and there a lot of ways of displaying the data your api serves up.
 
-These are both fairly customisable and save you from re-inventing the wheel when it comes to creating charts.
+For example, if you were displaying a heat-map for earthquake data, the user might choose to show only data for a certain location, and then they may choose to show only events between January and May. The interface would alter the map to match what the user had chosen. 
 
-Some of the data sets from the APIs above come with coordinates (lat, lon) so it would be cool to use them to visualise your data on a map. A nice free option for rendering maps in React is [React leaflet](https://react-leaflet.js.org/).
+In order to build more complicated UI's we can take advantage of pre-built 3rd party components. We have provided a selection of libraries that can be used to present your data.
 
-It comes with an excellent [getting started guide](https://react-leaflet.js.org/docs/start-installation) to get you up and running.
+- [react-chartjs-2](https://github.com/jerairrest/react-chartjs-2) A chart library. They have some lovely [demos](https://reactchartjs.github.io/react-chartjs-2/#/) with links to examples.
+- [react-google-charts](https://www.npmjs.com/package/react-google-charts) A more complex chart library with a wider range of options.
+- [React leaflet](https://react-leaflet.js.org/) A free library for rendering leaflet maps in React. It comes with an excellent [getting started guide](https://react-leaflet.js.org/docs/start-installation) to get you up and running.
+- [React Bootstrap](https://react-bootstrap.github.io/) React components based on the popular Bootstrap CSS framework.
+- [Material UI](https://material-ui.com/) React components using Google's Material design.
+
 
 Don't feel confined to these suggestions. There are several other public api's / visulisation libraries out there for you to use. Spend a bit of time planning your app and researching what information is available in your api's.
 
-Note:
-If you cd into the root directory of this repo you can run `create-react-app .` to place your new project in here.
