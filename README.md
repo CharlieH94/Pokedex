@@ -21,6 +21,7 @@ The first step is to decide on which API you will use for this project. We have 
 
 - [Marvel Comics](https://developer.marvel.com/) - An official database for all things superhero
 - [The Cat API](https://thecatapi.com/) - Cats as a service
+- [Giphy API](https://developers.giphy.com/) - Search and upload gifs
 - [UK Police Data](https://data.police.uk/docs/) - Policing & crime data in the UK
 - [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/fdsnws/event/1/) - Earthquakes and stuff
 - [BikeWise](https://www.bikewise.org/documentation/api_v2) - Bike crashes, hazards and thefts
