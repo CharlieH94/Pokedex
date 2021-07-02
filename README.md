@@ -22,6 +22,11 @@ The first step is to decide on which API you will use for this project. We have 
 - [Marvel Comics](https://developer.marvel.com/) - An official database for all things superhero
 - [The Cat API](https://thecatapi.com/) - Cats as a service
 - [Giphy API](https://developers.giphy.com/) - Search and upload gifs
+- [DnD 5th Edition](http://www.dnd5eapi.co/) - The classic rpg
+- [Magic the Gathering](https://magicthegathering.io/) - The popular card game
+- [PokeApi](https://pokeapi.co/) - Gotta catch em all
+- [TvMaze](https://www.tvmaze.com/api) - Information about TV shows
+- [Carbon Intensity](https://api.carbonintensity.org.uk/) - The official Carbon Intensity API developed by the National Grid
 - [UK Police Data](https://data.police.uk/docs/) - Policing & crime data in the UK
 - [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/fdsnws/event/1/) - Earthquakes and stuff
 - [BikeWise](https://www.bikewise.org/documentation/api_v2) - Bike crashes, hazards and thefts
@@ -56,6 +61,7 @@ In order to build more complicated UI's we can take advantage of pre-built 3rd p
 
 - [react-chartjs-2](https://github.com/jerairrest/react-chartjs-2) A chart library. They have some lovely [demos](https://reactchartjs.github.io/react-chartjs-2/#/) with links to examples.
 - [react-google-charts](https://www.npmjs.com/package/react-google-charts) A more complex chart library with a wider range of options.
+- [nivo-rocks](https://nivo.rocks/components) A React chart library built by a co-creator of [State of JS](https://stateofjs.com/)
 - [React leaflet](https://react-leaflet.js.org/) A free library for rendering leaflet maps in React. It comes with an excellent [getting started guide](https://react-leaflet.js.org/docs/start-installation) to get you up and running.
 - [React Bootstrap](https://react-bootstrap.github.io/) React components based on the popular Bootstrap CSS framework.
 - [Material UI](https://material-ui.com/) React components that use Google's Material design.
