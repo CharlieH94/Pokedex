@@ -4,16 +4,14 @@ In this sprint you'll be using data from a third party API. Your task is to crea
 
 For example if you were displaying a heatmap for earthquake data, the user might choose to show only data for a certain location, and then they may choose to show only events between January and May 2018. The interface would alter the data visualisation to match what the user had chosen.
 
-
 Note:
-If you cd into the root directory of this repo you can run 
+If you cd into the root directory of this repo you can run
 
 ```bash
-create-react-app .
+npx create-react-app .
 ```
 
 to place your new project in here.
-
 
 ## Choose your API
 
@@ -30,7 +28,7 @@ The first step is to decide on which API you will use for this project. We have 
 - [UK Police Data](https://data.police.uk/docs/) - Policing & crime data in the UK
 - [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/fdsnws/event/1/) - Earthquakes and stuff
 - [BikeWise](https://www.bikewise.org/documentation/api_v2) - Bike crashes, hazards and thefts
-- [Open Weather Map](https://openweathermap.org/api) - Current and forecast weather accross the globe
+- [Open Weather Map](https://openweathermap.org/api) - Current and forecast weather across the globe
 - [TicketMaster](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/) - Events
 - [Google books](https://developers.google.com/books/docs/overview) - Information on Books
 - [NASA](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh) - Meteorite landings
@@ -50,12 +48,11 @@ Once you have chosen your API you should spend a little time planning.
 - [ ] Decide which pieces of state each component will need and get a rough idea of where this state will sit on your tree
 - [ ] Ensure state is high enough it can be shared by necessary components, but as low as possible to avoid passing it unnecessarily.
 
-
 ## Visualise the data
 
 How you display your data is up to you and there a lot of ways of displaying the data your api serves up.
 
-For example, if you were displaying a heat-map for earthquake data, the user might choose to show only data for a certain location, and then they may choose to show only events between January and May. The interface would alter the map to match what the user had chosen. 
+For example, if you were displaying a heat-map for earthquake data, the user might choose to show only data for a certain location, and then they may choose to show only events between January and May. The interface would alter the map to match what the user had chosen.
 
 In order to build more complicated UI's we can take advantage of pre-built 3rd party components. We have provided a selection of libraries that can be used to present your data.
 
@@ -66,6 +63,4 @@ In order to build more complicated UI's we can take advantage of pre-built 3rd p
 - [React Bootstrap](https://react-bootstrap.github.io/) React components based on the popular Bootstrap CSS framework.
 - [Material UI](https://material-ui.com/) React components that use Google's Material design.
 
-
-Don't feel confined to these suggestions. There are several other public api's / visulisation libraries out there for you to use. Spend a bit of time planning your app and researching what information is available in your api's.
-
+Don't feel confined to these suggestions. There are several other public api's / visualisation libraries out there for you to use. Spend a bit of time planning your app and researching what information is available in your api's.
