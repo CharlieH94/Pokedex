@@ -61,6 +61,6 @@ In order to build more complicated UI's we can take advantage of pre-built 3rd p
 - [nivo-rocks](https://nivo.rocks/components) A React chart library built by a co-creator of [State of JS](https://stateofjs.com/)
 - [React leaflet](https://react-leaflet.js.org/) A free library for rendering leaflet maps in React. It comes with an excellent [getting started guide](https://react-leaflet.js.org/docs/start-installation) to get you up and running.
 - [React Bootstrap](https://react-bootstrap.github.io/) React components based on the popular Bootstrap CSS framework.
-- [Material UI](https://material-ui.com/) React components that use Google's Material design.
+- [MUI (formerly known as Material UI)](https://mui.com/core/) React components that use Google's Material design.
 
 Don't feel confined to these suggestions. There are several other public api's / visualisation libraries out there for you to use. Spend a bit of time planning your app and researching what information is available in your api's.
