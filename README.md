@@ -17,7 +17,6 @@ to place your new project in here.
 
 The first step is to decide on which API you will use for this project. We have provided a shortlist of api's that you might find useful but you are not limited to these.
 
-- [Marvel Comics](https://developer.marvel.com/) - An official database for all things superhero
 - [The Cat API](https://thecatapi.com/) - Cats as a service
 - [Giphy API](https://developers.giphy.com/) - Search and upload gifs
 - [DnD 5th Edition](http://www.dnd5eapi.co/) - The classic rpg
