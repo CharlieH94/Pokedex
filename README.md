@@ -24,7 +24,6 @@ The first step is to decide on which API you will use for this project. We have 
 - [PokeApi](https://pokeapi.co/) - Gotta catch em all
 - [TvMaze](https://www.tvmaze.com/api) - Information about TV shows
 - [Carbon Intensity](https://api.carbonintensity.org.uk/) - The official Carbon Intensity API developed by the National Grid
-- [UK Police Data](https://data.police.uk/docs/) - Policing & crime data in the UK
 - [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/fdsnws/event/1/) - Earthquakes and stuff
 - [BikeWise](https://www.bikewise.org/documentation/api_v2) - Bike crashes, hazards and thefts
 - [Open Weather Map](https://openweathermap.org/api) - Current and forecast weather across the globe
@@ -58,9 +57,9 @@ In order to build more complicated UI's we can take advantage of pre-built 3rd p
 - [react-chartjs-2](https://github.com/jerairrest/react-chartjs-2) A chart library. They have some lovely [demos](https://reactchartjs.github.io/react-chartjs-2/#/) with links to examples.
 - [react-google-charts](https://www.npmjs.com/package/react-google-charts) A more complex chart library with a wider range of options.
 - [nivo-rocks](https://nivo.rocks/components) A React chart library built by a co-creator of [State of JS](https://stateofjs.com/)
-- [React leaflet](https://react-leaflet.js.org/) A free library for rendering leaflet maps in React. There's a nice tutorial demoing it [here](https://www.youtube.com/watch?v=290VgjkLong) as well as a [getting started guide](https://react-leaflet.js.org/docs/start-installation) to get you up and running. 
+- [React leaflet](https://react-leaflet.js.org/) A free library for rendering leaflet maps in React. There's a nice tutorial demoing it [here](https://www.youtube.com/watch?v=290VgjkLong) as well as a [getting started guide](https://react-leaflet.js.org/docs/start-installation) to get you up and running.
 
-**nb** React Leaflet v3 is incompatible with React v18. At the time of writing you'll need to install v4 which is still in beta. Use this install command `npm i react-leaflet@4.0.0-beta.0` 
+**nb** React Leaflet v3 is incompatible with React v18. At the time of writing you'll need to install v4 which is still in beta. Use this install command `npm i react-leaflet@4.0.0-beta.0`
 
 - [React Bootstrap](https://react-bootstrap.github.io/) React components based on the popular Bootstrap CSS framework.
 - [MUI (formerly known as Material UI)](https://mui.com/core/) React components that use Google's Material design.
