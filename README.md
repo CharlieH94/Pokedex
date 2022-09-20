@@ -17,6 +17,7 @@ to place your new project in here.
 
 The first step is to decide on which API you will use for this project. We have provided a shortlist of api's that you might find useful but you are not limited to these.
 
+- [Dummy API](https://dummyapi.io/) - Make your own social media site with fake users, posts and images.
 - [The Cat API](https://thecatapi.com/) - Cats as a service
 - [Giphy API](https://developers.giphy.com/) - Search and upload gifs
 - [DnD 5th Edition](http://www.dnd5eapi.co/) - The classic rpg
@@ -58,6 +59,7 @@ In order to build more complicated UI's we can take advantage of pre-built 3rd p
 - [react-google-charts](https://www.npmjs.com/package/react-google-charts) A more complex chart library with a wider range of options.
 - [nivo-rocks](https://nivo.rocks/components) A React chart library built by a co-creator of [State of JS](https://stateofjs.com/)
 - [React leaflet](https://react-leaflet.js.org/) A free library for rendering leaflet maps in React. There's a nice tutorial demoing it [here](https://www.youtube.com/watch?v=290VgjkLong) as well as a [getting started guide](https://react-leaflet.js.org/docs/start-installation) to get you up and running.
+- [Mapbox](https://www.mapbox.com/) A professional maps service with a free tier to try out most features. Comes with a [React SDK](https://github.com/alex3165/react-mapbox-gl) for easy integration. (You may need to add `--force` to your npm install if the react versions conflict.)
 
 **nb** React Leaflet v3 is incompatible with React v18. At the time of writing you'll need to install v4 which is still in beta. Use this install command `npm i react-leaflet@4.0.0-beta.0`
 
