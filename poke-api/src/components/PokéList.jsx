@@ -10,7 +10,6 @@ const PokéList = ({searchTerm}) => {
         fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm.toLowerCase()}`)
         .then(response => response.json())
             .then(data => {
-                console.log(data);
                 setPokémon(data);
                 setIsLoading(false);
         })
@@ -21,7 +20,7 @@ const PokéList = ({searchTerm}) => {
       <section>
         <div id='result-header'>
           <div className='mini-icon red small'></div>  
-          <h2>Results for {searchTerm}:</h2>
+          <h2>Results:</h2>
           <div className='mini-icon red small'></div>  
         </div>
         <div className='result-box'>
