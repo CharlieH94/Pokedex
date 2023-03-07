@@ -1,4 +1,5 @@
 import './App.css';
+import logo from './pokeball.svg';
 import { useState } from 'react';
 import Header from './components/Header';
 import PokémonSearch from './components/PokémonSearch';
@@ -22,6 +23,7 @@ function App() {
   return initialLoading ? (
     <div className='App'>
       < p className='loading'> Booting Pokédex...</p >
+      <img src={logo} className="App-logo" alt="logo" />
     </div>
     )
         : (

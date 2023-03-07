@@ -47,7 +47,7 @@ const PokéCard = ({ pokémon }) => {
             <div className='result-footer'>
                 <ul>
                     {pokémon.types.map(slot => {
-                        return <li style={typeColouriser(slot.type.name)}>{slot.type.name}</li>
+                        return <li key={slot.type.name} style={typeColouriser(slot.type.name)}>{slot.type.name}</li>
                     })}
                 </ul>
                 <div className='statbox'>
@@ -55,7 +55,8 @@ const PokéCard = ({ pokémon }) => {
                         <p className='statbox--top'>Height:</p>
                         <p className= 'statbox--bottom'>Weight:</p>
                     </div>
-                    <div className='box-right statbox__child'><p className='statbox--top'>{pokémon.height}</p>
+                    <div className='box-right statbox__child'>
+                        <p className='statbox--top'>{pokémon.height}</p>
                         <p className='statbox--bottom'>{pokémon.weight}</p>
                     </div>
                 </div>
@@ -65,3 +66,6 @@ const PokéCard = ({ pokémon }) => {
 }
 
 export default PokéCard;
+
+// height units = dm
+//weight units = hg

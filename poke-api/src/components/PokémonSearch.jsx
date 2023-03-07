@@ -9,8 +9,20 @@ const PokémonSearch = ({ setSearchTerm }) => {
   
     const handleSubmit = (event) => {
       event.preventDefault();
-      setSearchTerm(newSearchTerm);
-      setNewSearchTerm('');
+      fetch(`https://pokeapi.co/api/v2/pokedex/1/`)
+      .then(response => response.json())
+      .then(data => {
+        const namesArray = data.pokemon_entries.map(pokemon => pokemon.pokemon_species.name);
+        if (!isEntryValid(newSearchTerm, namesArray)) {
+          console.log("Handle your invalid entries better!")
+          // add invalid name/number input handling stuff here
+          alert("Invalid Pokédex Entry!")
+          setNewSearchTerm('');
+        } else {
+          setSearchTerm(newSearchTerm);
+          setNewSearchTerm('');
+        }
+      });
     }
     
     return (
@@ -23,3 +35,7 @@ const PokémonSearch = ({ setSearchTerm }) => {
 }
   
 export default PokémonSearch;
+
+function isEntryValid(entry, array) {
+  return array.includes(entry.toLowerCase()) || (entry > 0 && entry <= array.length);
+}

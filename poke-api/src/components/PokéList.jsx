@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PokéCard from './PokéCard'
+import logo from '../pokeball.svg';
 
 const PokéList = ({searchTerm}) => {
     const [pokémon, setPokémon] = useState(null);
@@ -15,7 +16,12 @@ const PokéList = ({searchTerm}) => {
         })
     }, [searchTerm]);
 
-    return isLoading ? <p className='loading'>Loading Pokémon Data...</p>
+  return isLoading ? (
+    <div>
+      <p className='loading'>Loading Pokémon Data...</p>
+      <img src={logo} className="App-logo" alt="logo" />
+    </div>
+  )
         : (
       <section>
         <div id='result-header'>

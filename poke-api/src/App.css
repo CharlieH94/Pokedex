@@ -276,6 +276,7 @@ canvas {
 .box-left p {
   border-left: rgb(206 34 17) 5px solid;
   padding-left: 2rem;
+  padding-right: 1rem;
 }
 
 .box-right p {
@@ -291,13 +292,18 @@ canvas {
   border-bottom-left-radius: 7px;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin: 2rem;
+}
 
-/* 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -305,7 +311,7 @@ canvas {
   to {
     transform: rotate(360deg);
   }
-} */
+}
 
 
 @media only screen and (max-width: 1100px) {
