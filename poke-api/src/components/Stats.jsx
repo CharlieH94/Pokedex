@@ -4,6 +4,7 @@ import { Radar } from 'react-chartjs-2';
 const Stats = ({ pokémon }) => {
     const labels = pokémon.stats.map(stat => {
         if (stat.stat.name === 'special-attack') return 'sp-atk';
+        else if (stat.stat.name === 'defense') return 'def';
         else if (stat.stat.name === 'special-defense') return 'sp-def';
         else return stat.stat.name;
     } );
@@ -24,17 +25,25 @@ const Stats = ({ pokémon }) => {
             },
            
         },
+        // maintainAspectRatio: true,
+        // responsive: true,
         scales: {
             r: {
               pointLabels: {
-                color: 'green',
+                color: 'purple',
                 font: {
                   size: 25,
                   style: 'italic'
                 }
+              },
+              grid: {
+                  color: 'black',
               }
-            }
-          }
+            },
+        },
+        layout: {
+            padding: 30
+          },
     }
 
     return (

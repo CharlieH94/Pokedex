@@ -16,7 +16,7 @@ const PokémonSearch = ({ setSearchTerm }) => {
     return (
       <form onSubmit={handleSubmit}>
         <label htmlFor='pokemon-input'>Search Pokédex:</label>
-        <input id='pokemon-input' value={newSearchTerm} onChange={handleChange} placeholder='e.g. Charmander'></input>
+        <input id='pokemon-input' value={newSearchTerm} onChange={handleChange} placeholder='e.g. Charmander, 151'></input>
         <button type='submit'>Go!</button>
       </form>
     )

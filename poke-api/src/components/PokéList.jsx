@@ -15,7 +15,7 @@ const PokéList = ({searchTerm}) => {
         })
     }, [searchTerm]);
 
-    return isLoading ? <p>LOADING POKEMON DATA</p>
+    return isLoading ? <p className='loading'>Loading Pokémon Data...</p>
         : (
       <section>
         <div id='result-header'>
