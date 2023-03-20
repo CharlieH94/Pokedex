@@ -47,7 +47,7 @@ const PokéCard = ({ pokémon }) => {
             <div className='result-footer'>
                 <ul>
                     {pokémon.types.map(slot => {
-                        return <li key={slot.type.name} style={typeColouriser(slot.type.name)}>{slot.type.name}</li>
+                        return <li key={slot.type.name} style={typeColouriser(slot.type.name)} className='pokemon-type'>{slot.type.name}</li>
                     })}
                 </ul>
                 <div className='statbox'>

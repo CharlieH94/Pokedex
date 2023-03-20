@@ -42,7 +42,7 @@ const Stats = ({ pokémon }) => {
             },
         },
         layout: {
-            padding: 30
+            padding: 40
           },
     }
 
