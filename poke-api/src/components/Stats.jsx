@@ -47,12 +47,10 @@ const Stats = ({ pokémon }) => {
     }
 
     return (
-        <div id='chart'>
-            <Radar
-                data={data}
-                options={options}
-            />
-        </div>
+        <Radar
+            data={data}
+            options={options}
+        />
     )
 };
 

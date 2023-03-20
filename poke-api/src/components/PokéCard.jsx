@@ -41,7 +41,7 @@ const PokéCard = ({ pokémon }) => {
                 <figure><img src={pokémon.sprites.other["official-artwork"].front_default} alt={pokémon.species.name} /></figure>
                 <figcaption>        
                     <h3 className='gb-font'>Base Stats</h3>
-                    <Stats pokémon={pokémon} />
+                    <Stats pokémon={pokémon}/>
                 </figcaption>
             </div>
             <div className='result-footer'>

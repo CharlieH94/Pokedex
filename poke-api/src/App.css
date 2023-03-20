@@ -13,17 +13,50 @@ body {
 
 .App {
   text-align: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* <---------- Header ----------> */
+
 header {
-  display: flex;
-  width: 70vw;
-  margin: 1rem 0;
+  margin-left: 1rem;
 }
+
+header h1 {
+  font-size: 4rem;
+  margin: auto;
+}
+
+header .mini-icon, #scanner {
+  display: none;
+}
+
+/* @media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    width: 70vw;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  header .mini-icon, #scanner {
+    display: flex;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  h1 {
+    margin: 0;
+    margin-left: -5vw;
+    text-align: center;
+  }
+} */
 
 #banner {
   display: flex;
@@ -79,10 +112,11 @@ p.loading {
   font-size: 3rem;
 }
 
+/* <---------- Search Input ----------> */
+
 input, label, button {
-  font-size: 1.5rem;
   line-height: 1.2;
-  margin: 0 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
 }
 
@@ -92,33 +126,46 @@ label {
 }
 
 form {
-  margin: 2rem 0 3rem 0;
+  width: 100vw;
+  margin: 1rem auto;
 }
+
+/* @media only screen and (min-width: 768px) {
+  input, label, button {
+    font-size: 1.5rem;
+  }
+
+  form {
+    margin: 2rem 0 3rem 0;
+  }
+} */
+
+/* <---------- Results / PokéList ----------> */
 
 section {
   width: 80vw;
   margin: 0 auto;
-  padding: 5rem 5rem 2rem 5rem;
+  padding: 0 2rem 0rem 2rem;
   background-color: rgb(207, 205, 205);
-  border-bottom-left-radius: 150px;
+  border-bottom-left-radius: 60px;
   box-shadow: 0 0 10px black inset;
 }
 
 .result-box {
   background-color: rgb(219, 234, 222);
   box-shadow: 0 0 10px black inset;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 #result-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -3rem 0 1rem 0;
+  padding: 1rem 0;
 }
 
 #poke-name {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: "Early GameBoy";
   margin-top: 1rem;
 }
@@ -129,12 +176,6 @@ section {
   box-shadow: 0 0 5px black inset;
 }
 
-.left {
-  height: 4rem;
-  width: 4rem;
-  margin: 2rem 0 1rem 1rem;
-}
-
 #result-footer {
   display: flex;
   align-items: center;
@@ -142,55 +183,57 @@ section {
 }
 
 #speaker {
-  margin-top: 1rem;
-  height: 6rem;
-  width: 6rem;
+  height: 2.5rem;
+  width: 2.5rem;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 }
 
 .speaker-line {
-  border-bottom: 5px black solid;
+  border-bottom: 3px black solid;
+}
+
+.mini-icon.red.left {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem 1rem 1rem 0;
 }
 
 #stats {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 3rem 0;
+  margin: 0.5rem 0;
   flex-wrap: wrap;
   flex-shrink: 1;
   width: 100%;
 }
-
 
 img {
   width: 100%;
 }
 
 figcaption {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 475px;
-  align-items: center;
+  width: 100%;
 }
 
-figcaption p {
+/* figcaption p {
   font-size: 2rem;
   padding: 1rem;
+} */
+
+h3.gb-font {
+  font-size: 1.1rem;
+  padding: 0.25rem 0;
 }
 
-h3 {
-  font-size: 2rem;
-}
-
-#chart {
-  width: 100%;
+/* #chart {
+  width: 95%;
   margin: 0;
   align-self: center;
-  /* flawed responsiveness, doesn't revert, shrink or grow until refresh */
-}
+  flawed responsiveness, doesn't revert, shrink or grow until refresh
+} */
 
 .result-content {
   display: flex;
@@ -292,6 +335,91 @@ canvas {
   border-bottom-left-radius: 7px;
 }
 
+
+@media only screen and (min-width: 768px) {
+  section {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5rem 5rem 2rem 5rem;
+    background-color: rgb(207, 205, 205);
+    border-bottom-left-radius: 150px;
+    box-shadow: 0 0 10px black inset;
+  }
+
+  #result-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -3rem 0 1rem 0;
+  }
+
+  .result-box {
+    background-color: rgb(219, 234, 222);
+    box-shadow: 0 0 10px black inset;
+    padding: 2rem;
+  }
+
+  #poke-name {
+    font-size: 3rem;
+    font-family: "Early GameBoy";
+    margin-top: 1rem;
+  }
+
+  #speaker {
+    margin-top: 1rem;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    }
+
+  .speaker-line {
+    border-bottom: 5px black solid;
+  }
+
+  .left {
+    height: 4rem;
+    width: 4rem;
+    margin: 2rem 0 1rem 1rem;
+  }
+
+  #stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    width: 100%;
+  }
+
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 475px;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+    /* h3.gb-font {
+    font-size: 1.1rem;
+    padding: 0.25rem 0;
+  } */
+
+  /* #chart {
+    width: 100%;
+    margin: 0;
+    align-self: center;
+    flawed responsiveness, doesn't revert, shrink or grow until refresh
+  } */
+}
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -314,18 +442,3 @@ canvas {
 }
 
 
-@media only screen and (max-width: 1100px) {
-  header .mini-icon, #scanner {
-    display: none;
-  }
-
-  header {
-    justify-content: center;
-  }
-
-  h1 {
-    margin: 0;
-    margin-left: -5vw;
-    text-align: center;
-  }
-}
