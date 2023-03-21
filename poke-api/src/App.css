@@ -115,6 +115,7 @@ p.loading {
 /* <---------- Search Input ----------> */
 
 input, label, button {
+  font-size: 1.25rem;
   line-height: 1.2;
   margin: 0.25rem;
   padding: 0.25rem;
@@ -128,6 +129,14 @@ label {
 form {
   width: 100vw;
   margin: 1rem auto;
+}
+
+#search-btn {
+  background-color: rgb(207, 205, 205);
+  color: black;
+  border: 1px white solid;
+  box-shadow: 0 0 5px 2px black, 0 0 4px black inset;
+  border-radius: 10px;
 }
 
 /* @media only screen and (min-width: 768px) {
@@ -165,7 +174,7 @@ section {
 }
 
 #poke-name {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: "Early GameBoy";
   margin-top: 1rem;
 }
@@ -224,7 +233,7 @@ figcaption {
 } */
 
 h3.gb-font {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 0.25rem 0;
 }
 
@@ -249,6 +258,10 @@ canvas {
   flex-direction: column;
   align-items: center;
 }
+
+/* figure {
+  height: fit-content;
+} */
 
 .result-footer {
   width: 100%;
@@ -333,6 +346,23 @@ canvas {
 }
 
 
+@media only screen and (min-width: 480px) {
+  #poke-name {
+    font-size: 1.5rem;
+  }
+
+  h3.gb-font {
+    font-size: 1.1rem;
+    padding: 0.25rem 0;
+  }
+
+  .pokemon-type {
+    color: white;
+    width: 190px;
+    align-items: center;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   section {
     width: 80vw;
@@ -360,6 +390,10 @@ canvas {
     font-size: 3rem;
     font-family: "Early GameBoy";
     margin-top: 1rem;
+  }
+
+  .poke-id-break {
+    display: none;
   }
 
   #speaker {

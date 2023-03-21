@@ -36,7 +36,7 @@ const PokéCard = ({ pokémon }) => {
     
     return (
         <div className='result-content'>
-            <h2 id='poke-name'><em>{`#${pokémon.id}`}</em> {capitaliser(pokémon.name)}</h2>
+            <h2 id='poke-name'><em>{`#${pokémon.id}`}</em><br class='poke-id-break'/> {capitaliser(pokémon.name)}</h2>
             <div id='stats'>
                 <figure><img src={pokémon.sprites.other["official-artwork"].front_default} alt={pokémon.species.name} /></figure>
                 <figcaption>        
