@@ -112,6 +112,17 @@ p.loading {
   font-size: 3rem;
 }
 
+#loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loading-screen p {
+  font-size: 2rem;
+  width: 80%;
+}
+
 /* <---------- Search Input ----------> */
 
 input, label, button {

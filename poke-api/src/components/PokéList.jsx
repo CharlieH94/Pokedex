@@ -17,7 +17,7 @@ const PokéList = ({searchTerm}) => {
     }, [searchTerm]);
 
   return isLoading ? (
-    <div>
+    <div id='loading-screen'>
       <p className='loading'>Loading Pokémon Data...</p>
       <img src={logo} className="App-logo" alt="logo" />
     </div>
