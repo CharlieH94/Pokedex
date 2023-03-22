@@ -139,6 +139,11 @@ form {
   border-radius: 10px;
 }
 
+#search-btn:active {
+    box-shadow: 0 0 5px 2px black, 0 0 4px black inset, 0 3px rgb(1, 1, 172);
+  transform: translateY(1px);
+}
+
 /* @media only screen and (min-width: 768px) {
   input, label, button {
     font-size: 1.5rem;
