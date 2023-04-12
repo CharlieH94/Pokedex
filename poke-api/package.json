@@ -1,8 +1,8 @@
 {
   "name": "poke-api",
   "version": "0.1.0",
-  "homepage": "https://charlieh94.github.io/fe-react-data-visualisation",
-  "private": true,
+  "homepage": "https://charlieh94.github.io/Pokedex",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
