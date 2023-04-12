@@ -1,4 +1,4 @@
-# Portfolio
+# Pokédex Data Visualisation
 
 ## Overview
 This is a side project that was completed after graduating from Northcoders. During the bootcamp we were tasked with creating a React-based interface to present data in an interactive and engaging way. What we chose to display and how we chose to display it was entirely up to us. I opted for Pokémon, and this was the result!  
