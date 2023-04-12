@@ -9,6 +9,7 @@ This is a side project that was completed after graduating from Northcoders. Dur
 
 ## Features
 - User can input any Pokémon name or number and, if it exists, the app will generate the Pokémon's data in the Pokédex.
+- Randomly generated Pokémon when you first reach the home page.
 - Lots of Pokédex themed styling!
 
 ## How to Use
