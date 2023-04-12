@@ -32,7 +32,7 @@ const Stats = ({ pokémon }) => {
               pointLabels: {
                 color: 'purple',
                 font: {
-                  size: 25,
+                  size: 16,
                   style: 'italic'
                 }
               },
@@ -42,7 +42,7 @@ const Stats = ({ pokémon }) => {
             },
         },
         layout: {
-            padding: 40
+            padding: 10
           },
     }
 

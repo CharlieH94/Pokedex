@@ -34,25 +34,6 @@ header .mini-icon, #scanner {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
-  header h1 {
-    font-size: 6rem;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-    header {
-    display: flex;
-    width: 70vw;
-    margin: 1rem 0;
-    justify-content: center;
-  }
-
-  header .mini-icon, #scanner {
-    display: flex;
-  }
-}
-
 #banner {
   display: flex;
   justify-content: space-between;
@@ -66,7 +47,6 @@ header .mini-icon, #scanner {
   background-color: aqua;
   border-radius: 50%;
   border: 15px white solid;
-  margin-right: 3rem;
   box-shadow: 0 0 30px 10px rgb(1, 1, 172) inset, 0 0 30px black;
 }
 
@@ -78,6 +58,30 @@ header .mini-icon, #scanner {
   margin: 0 0.75rem;
   border: 1px solid black;
   box-shadow: 0 0 10px black inset;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    width: 70vw;
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  header h1 {
+    font-size: 6rem;
+  }
+  header .mini-icon, #scanner {
+    display: flex;
+    scale: 0.8;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  header .mini-icon, #scanner {
+    margin-right: 3rem;
+    scale: 1;
+  }
 }
 
 .red {
@@ -146,7 +150,7 @@ form {
 }
 
 #search-btn:active {
-    box-shadow: 0 0 5px 2px black, 0 0 4px black inset, 0 3px rgb(1, 1, 172);
+  box-shadow: 0 0 5px 2px black, 0 0 4px black inset, 0 3px rgb(1, 1, 172);
   transform: translateY(1px);
 }
 
@@ -156,7 +160,7 @@ form {
   }
 
   form {
-    margin: 2rem 0 3rem 0;
+    margin-bottom: 2rem;
   }
 }
 
@@ -235,25 +239,14 @@ img {
 }
 
 figcaption {
-  width: 100%;
+  width: 90%;
 }
-
-/* figcaption p {
-  font-size: 2rem;
-  padding: 1rem;
-} */
 
 h3.gb-font {
   font-size: 1rem;
   padding: 0.25rem 0;
 }
 
-/* #chart {
-  width: 95%;
-  margin: 0;
-  align-self: center;
-  flawed responsiveness, doesn't revert, shrink or grow until refresh
-} */
 canvas {
   background-color: rgb(247, 248, 248);
   border-top: 3px black dashed;
@@ -270,10 +263,6 @@ canvas {
   align-items: center;
 }
 
-/* figure {
-  height: fit-content;
-} */
-
 .result-footer {
   width: 100%;
   margin: 0 auto;
@@ -287,6 +276,8 @@ canvas {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .pokemon-type {
@@ -311,7 +302,7 @@ canvas {
   border: black solid 3px;
   border-radius: 10px;
   display: flex;
-  width: 100%;
+  width: 90%;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -385,10 +376,18 @@ canvas {
   }
 
   #result-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -3rem 0 1rem 0;
+    padding: 0;
+    margin: -3rem 0 1.75rem 0;
+  }
+
+  .pokemon-type {
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  #result-footer .mini-icon.red.left {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 2rem;
   }
 
   .result-box {
@@ -398,9 +397,7 @@ canvas {
   }
 
   #poke-name {
-    font-size: 3rem;
-    font-family: "Early GameBoy";
-    margin-top: 1rem;
+    margin: 0 0 1rem 0;
   }
 
   .poke-id-break {
@@ -426,114 +423,26 @@ canvas {
     margin: 2rem 0 1rem 1rem;
   }
 
-  #stats {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 3rem 0;
-    flex-wrap: wrap;
-    flex-shrink: 1;
-    width: 100%;
+  figure {
+    width: 48%;
   }
 
   figcaption {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 475px;
-    align-items: center;
+    width: 48%;
   }
 
-  h3 {
-    font-size: 2rem;
+  #stats {
+    justify-content: space-between;
   }
 
-    /* h3.gb-font {
-    font-size: 1.1rem;
-    padding: 0.25rem 0;
-  } */
-
-  /* #chart {
-    width: 100%;
-    margin: 0;
-    align-self: center;
-    flawed responsiveness, doesn't revert, shrink or grow until refresh
-  } */
-
-  canvas {
-    background-color: rgb(247, 248, 248);
-    border-top: 3px black dashed;
-    border-left: 3px black solid;
-    border-right: 3px black solid;
-    border-bottom: 3px black solid;
-    border-radius: 0 0 30px 30px;
-    width: 100%;
-  }
-
-  .result-footer ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-
-  .pokemon-type {
-    height: 4rem;
-    padding: 1rem;
-    color: white;
-    /* background-color:grey; */
-    display: flex;
-    padding-left: 1.75rem;
-    width: 100%;
-    align-items: center;
-    font-size: 2rem;
-    border-radius: 20px;
-    margin: 0.5rem 1rem;
-    font-family: "Early GameBoy";
-    border: 5px black solid;
-    box-shadow: 0 0 5px black inset;
+  h3.gb-font {
+    font-size: 0.8rem;
   }
 
   .statbox {
-  background-color: white;
-  border: black solid 3px;
-  border-radius: 10px;
-  display: flex;
-  flex-basis: 35%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+    flex-basis: 35%;
+  }
 }
-
-.gb-font {
-  font-family: "Early Gameboy";
-  color: white;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  background-color: rgb(206 34 17);
-  text-align: center;
-  font-size: 1.75rem;
-  width: 100%;
-  border-radius: 30px 30px 0 0;
-  border-left: 3px black solid;
-  border-top: 3px black solid;
-  border-right: 3px black solid;
-}
-
-.statbox p {
-  font-size: 1.5rem;
-  font-family: "Early Gameboy";
-  text-align: left;
-}
-
-.box-left p {
-  border-left: rgb(206 34 17) 5px solid;
-  padding-left: 2rem;
-  padding-right: 1rem;
-}
-
-.box-right p {
-  padding-left: 4rem;
-}
-}
-
-
 
 .App-logo {
   height: 40vmin;
